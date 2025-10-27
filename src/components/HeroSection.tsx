@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import heroImg from "../assets/SiriPoster.jpg"; // 🖼️ Replace with your image
 

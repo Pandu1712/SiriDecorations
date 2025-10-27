@@ -1,4 +1,4 @@
-import React from "react";
+
 import GallerySection from "../components/GallerySection";
 import VideoGallery from "../components/VideoGallery";
 

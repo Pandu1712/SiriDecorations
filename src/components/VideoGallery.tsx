@@ -1,4 +1,4 @@
-import React from "react";
+
 
 // ✅ Import all your videos here
 import wedding1 from "../assets/videos/wedding1.mp4.mp4";

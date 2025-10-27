@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 
 // ✅ Import all images from src/assets/gallery dynamically
