@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 // ✅ Import all images from src/assets/gallery dynamically
-const imageModules = import.meta.glob("../assets/gallery/*.{jpg,jpeg,png,webp}", {
+const imageModules = import.meta.glob("@/assets/gallery/*.{jpg,jpeg,png,webp}", {
   eager: true,
   as: "url",
 });
