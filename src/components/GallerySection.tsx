@@ -1,13 +1,37 @@
-
 import { motion } from "framer-motion";
 
-// ✅ Import all images from src/assets/gallery dynamically
-const imageModules = import.meta.glob("@/assets/gallery/*.{jpg,jpeg,png,webp}", {
-  eager: true,
-  as: "url",
-});
+// ✅ Import each image individually from src/assets/gallery/
+import img1 from "../assets/gallery/birthday1.jpg";
+import img2 from "../assets/gallery/birthday2.jpg";
+import img3 from "../assets/gallery/cloth3.jpg";
+import img4 from "../assets/gallery/Cloths1.jpg";
+import img5 from "../assets/gallery/floor.jpg";
+import img6 from "../assets/gallery/floor2.jpg";
+import img7 from "../assets/gallery/flowers.jpg";
+import img8 from "../assets/gallery/flowers2.jpg";
+import img9 from "../assets/gallery/flowers3.jpg";
+import img10 from "../assets/gallery/Greenmat.jpg";
+import img11 from "../assets/gallery/poster1.jpg";
+import img12 from "../assets/gallery/poster2.jpg";
+import img13 from "../assets/gallery/poster3.jpg";
+import img14 from "../assets/gallery/sheet.jpg";
+import img15 from "../assets/gallery/Sidewall1.jpg";
+import img16 from "../assets/gallery/sidewall2.jpg";
+import img17 from "../assets/gallery/sidewall3.jpg";
+import img18 from "../assets/gallery/sidewall4.jpg";
+import img19 from "../assets/gallery/sidewall5.jpg";
+import img20 from "../assets/gallery/sidewall6.jpg";
+import img21 from "../assets/gallery/SiriItems.jpg";
+import img22 from "../assets/gallery/tharma.jpg";
+import img23 from "../assets/gallery/tharma2.jpg";
+import img24 from "../assets/gallery/tharma3.jpg";
+import img25 from "../assets/gallery/tharma4.jpg";
+import img26 from "../assets/gallery/tharma5.jpg";
+import img27 from "../assets/gallery/tharma6.jpg";
+import img28 from "../assets/gallery/wall.jpg";
+import img29 from "../assets/gallery/wallFlower.jpg";
 
-const images = Object.values(imageModules);
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29];
 
 const Gallery = () => {
   return (
