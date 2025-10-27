@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-// ✅ Import each image individually from src/assets/gallery/
-import img1 from "../assets/gallery/birthday1.jpg";
-import img2 from "../assets/gallery/birthday2.jpg";
+// ✅ Import each image individually
+
+import img2 from "../assets/gallery/wedding.jpg";
 import img3 from "../assets/gallery/cloth3.jpg";
 import img4 from "../assets/gallery/Cloths1.jpg";
 import img5 from "../assets/gallery/floor.jpg";
@@ -31,7 +31,11 @@ import img27 from "../assets/gallery/tharma6.jpg";
 import img28 from "../assets/gallery/wall.jpg";
 import img29 from "../assets/gallery/wallFlower.jpg";
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20, img21, img22, img23, img24, img25, img26, img27, img28, img29];
+const images = [
+ img2, img3, img4, img5, img6, img7, img8, img9, img10,
+  img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
+  img21, img22, img23, img24, img25, img26, img27, img28, img29
+];
 
 const Gallery = () => {
   return (
@@ -49,12 +53,12 @@ const Gallery = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
               viewport={{ once: true }}
-              className="relative overflow-hidden rounded-2xl shadow-lg group"
+              className="relative overflow-hidden rounded-2xl shadow-lg group bg-gray-200 flex items-center justify-center"
             >
               <img
                 src={img}
                 alt={`Gallery ${index + 1}`}
-                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-64 object-contain transition-transform duration-500 group-hover:scale-105"
               />
 
               {/* Overlay Effect */}

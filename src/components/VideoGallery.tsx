@@ -2,11 +2,11 @@
 
 // ✅ Import all your videos here
 import wedding1 from "../assets/videos/wedding1.mp4.mp4";
-import wedding2 from "../assets/videos/wedding1.mp4.mp4";
-import birthday1 from "../assets/videos/wedding1.mp4.mp4";
-import birthday2 from "../assets/videos/wedding1.mp4.mp4";
-import festival1 from "../assets/videos/wedding1.mp4.mp4";
-import corporate1 from "../assets/videos/wedding1.mp4.mp4";
+import wedding2 from "../assets/videos/video1.mp4";
+import birthday1 from "../assets/videos/video2.mp4";
+import birthday2 from "../assets/videos/video3.mp4";
+import festival1 from "../assets/videos/video4.mp4";
+import corporate1 from "../assets/videos/video5.mp4";
 
 const VideoGallery = () => {
   // ✅ Add all videos inside this array
