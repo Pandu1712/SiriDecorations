@@ -3,15 +3,49 @@ import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 
 // ✅ Import images
-import wedding1 from "../assets/gallery/wedding1.jpg";
-import wedding2 from "../assets/gallery/wedding2.jpg";
-import wedding3 from "../assets/gallery/wedding2.jpg";
-import birthday1 from "../assets/gallery/birthday1.jpg";
-import birthday2 from "../assets/gallery/birthday2.jpg";
-import festival1 from "../assets/gallery/birthday1.jpg";
-import corporate1 from "../assets/gallery/birthday2.jpg";
-import baby1 from "../assets/gallery/birthday1.jpg";
-import engagement1 from "../assets/gallery/wedding2.jpg";
+import wedding1 from "../assets/gallery/Stagesetup.png";
+import wedding2 from "../assets/gallery/floor.jpg";
+import wedding3 from "../assets/gallery/Dining.jpg";
+import wedding4 from "../assets/gallery/Haldi.png";
+import wedding5 from "../assets/gallery/romanticlight.jpg";
+import wedding6 from "../assets/gallery/alisn.jpg";
+
+
+import birthday1 from "../assets/gallery/Pastel Balloon Decor.jpeg";
+import birthday2 from "../assets/gallery/cartoontable.webp";
+import birthday3 from "../assets/gallery/birthday3.webp";
+import birthday4 from "../assets/gallery/birthtable.jpeg";
+import birthday5 from "../assets/gallery/partyhats.avif";
+import birthday6 from "../assets/gallery/Confetti Explosion.jpg";
+
+import festival1 from "../assets/gallery/Diwali Event Lighting.jpg";
+import festival2 from "../assets/gallery/Colorful Festival Backdrop.jpeg";
+import festival3 from "../assets/gallery/Rangoli Design Setup.jpeg";
+import festival4 from "../assets/gallery/Festival Stage Decor.jpg";
+import festival5 from "../assets/gallery/Cultural Event Setup.webp";
+import festival6 from "../assets/gallery/Festival Seating Arrangement.jpeg";
+
+import corporate1 from "../assets/gallery/Corporate Lighting Setup.jpeg";
+import corporate2 from "../assets/gallery/stagebacdoor.jpeg";
+import corporate3 from "../assets/gallery/Elegant Seating Setup - Copy.webp";
+import corporate4 from "../assets/gallery/product.jpeg";
+import corporate5 from "../assets/gallery/Conference Table Setup.jpeg";
+import corporate6 from "../assets/gallery/Award Ceremony Stage.jpeg";
+
+import baby1 from "../assets/gallery/Baby Shower Stage Setup.webp";
+import baby2 from "../assets/gallery/Pastel Balloon Decor.jpeg";
+import baby3 from "../assets/gallery/Themed Backdrop.jpeg";
+import baby4 from "../assets/gallery/Gift Table Setup.jpeg";
+import baby5 from "../assets/gallery/Festival Seating Arrangement.jpeg";
+import baby6 from "../assets/gallery/Photo Booth Area.avif";
+
+import engagement1 from "../assets/gallery/Ring Ceremony Backdrop.jpeg";
+import engagement2 from "../assets/gallery/Floral Stage Decor.jpeg";
+import engagement3 from "../assets/gallery/Elegant Seating Setup.webp";
+import engagement4 from "../assets/gallery/Engagement Table Decor.jpeg";
+import engagement5 from "../assets/gallery/Photo Booth Area.avif";
+import engagement6 from "../assets/gallery/Lighting Arrangements.webp";
+
 
 // ✅ Define TypeScript interfaces
 interface ImageItem {
@@ -33,6 +67,10 @@ const serviceData: Record<number, ServiceItem> = {
       { src: wedding1, name: "Royal Stage Setup" },
       { src: wedding2, name: "Elegant Floral Backdrop" },
       { src: wedding3, name: "Luxury Table Setup" },
+        { src: wedding4, name: "Haldi Setup" },
+        { src: wedding5, name: "Romantic Lighting" },
+        { src: wedding6, name: "Beautiful Aisle Design" },
+
     ],
   },
   2: {
@@ -41,27 +79,58 @@ const serviceData: Record<number, ServiceItem> = {
     images: [
       { src: birthday1, name: "Balloon Arch Setup" },
       { src: birthday2, name: "Cartoon Theme Table Decor" },
+        { src: birthday3, name: "Colorful Backdrop" },
+        { src: birthday4, name: "Birthday Cake Table" },
+        { src: birthday5, name: "Party Hats Display" },
+        { src: birthday6, name: "Confetti Explosion" },
+
     ],
   },
   3: {
     title: "Corporate Events",
     desc: "Professional decoration setups for meetings, product launches, and annual celebrations.",
-    images: [{ src: corporate1, name: "Corporate Lighting Setup" }],
+    images: [{ src: corporate1, name: "Corporate Lighting Setup" },
+        { src: corporate2, name: "Stage Backdrop" },
+        { src: corporate3, name: "Seating Arrangement" },
+        { src: corporate4, name: "Product Launch Decor" },
+        { src: corporate5, name: "Conference Table Setup" },
+        { src: corporate6, name: "Award Ceremony Stage" },
+    ],
   },
   4: {
     title: "Festivals",
     desc: "Traditional and vibrant decorations that bring festive energy to every occasion.",
-    images: [{ src: festival1, name: "Diwali Event Lighting" }],
+    images: [{ src: festival1, name: "Diwali Event Lighting" },
+        { src: festival2, name: "Colorful Festival Backdrop" },
+        { src: festival3, name: "Rangoli Design Setup" },
+        { src: festival4, name: "Festival Stage Decor" },
+        { src: festival5, name: "Cultural Event Setup" },
+        { src: festival6, name: "Festival Seating Arrangement" }
+    ],
   },
   5: {
     title: "Baby Showers",
     desc: "Soft pastel themes, balloon arches, and adorable stage decor to celebrate parenthood.",
-    images: [{ src: baby1, name: "Baby Shower Stage Setup" }],
+    images: [{ src: baby1, name: "Baby Shower Stage Setup" },
+        { src: baby2, name: "Pastel Balloon Decor" },
+        { src: baby3, name: "Themed Backdrop" },
+        { src: baby4, name: "Gift Table Setup" },
+        { src: baby5, name: "Seating Arrangement" },
+        { src: baby6, name: "Photo Booth Area" }
+
+    ],
   },
   6: {
     title: "Engagements",
     desc: "Romantic lighting, floral elegance, and grand stage setups for your engagement day.",
-    images: [{ src: engagement1, name: "Ring Ceremony Backdrop" }],
+    images: [{ src: engagement1, name: "Ring Ceremony Backdrop" },
+        { src: engagement2, name: "Floral Stage Decor" },
+        { src: engagement3, name: "Elegant Seating Setup" },
+        { src: engagement4, name: "Engagement Table Decor" },
+        { src: engagement5, name: "Photo Area Setup" },
+        { src: engagement6, name: "Lighting Arrangements" }
+
+    ],
   },
 };
 
