@@ -24,7 +24,7 @@ const Contact = () => {
               <p className="flex items-center gap-3">
                 <Phone className="text-pink-500" />
                 <a
-                  href="tel:+916303130025"
+                  href="tel:+919848976339"
                   className="hover:text-pink-600 transition"
                 >
                   +91 63031 30025
@@ -50,7 +50,7 @@ const Contact = () => {
             {/* Social Links */}
             <div className="flex gap-6 mt-8 justify-center">
               <a
-                href="https://wa.me/916303130025"
+                href="https://wa.me/919848976339"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 text-white p-3 rounded-full hover:scale-110 transition"

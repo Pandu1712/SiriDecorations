@@ -34,7 +34,7 @@ const HeroSection = () => {
             Making Every Event Beautiful With Artificial — Weddings, Birthdays, Festivals & More
           </p>
           <motion.a
-            href="https://wa.me/916303130025"
+            href="https://wa.me/919848976339"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
