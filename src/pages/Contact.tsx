@@ -1,34 +1,6 @@
-import { useRef, type FormEvent } from "react";
-import emailjs from "@emailjs/browser";
 import { Phone, Mail, MapPin, Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const Contact = () => {
-  const form = useRef<HTMLFormElement>(null);
-
-  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    if (!form.current) return;
-
-    emailjs
-      .sendForm(
-        "your_service_id", // Replace with your EmailJS Service ID
-        "your_template_id", // Replace with your EmailJS Template ID
-        form.current,
-        "your_public_key" // Replace with your EmailJS Public Key
-      )
-      .then(
-        (result) => {
-          alert("✅ Message sent successfully!");
-          form.current!.reset();
-        },
-        (error) => {
-          alert("❌ Failed to send message. Try again.");
-          console.log(error.text);
-        }
-      );
-  };
-
   return (
     <section className="relative py-20 bg-gradient-to-br from-pink-100 via-purple-100 to-pink-50 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
@@ -61,7 +33,7 @@ const Contact = () => {
               <p className="flex items-center gap-3">
                 <Mail className="text-pink-500" />
                 <a
-                  href="mailto:prasannakumarpanda2000@gmail.com"
+                  href="mailto:siridecorations@gmail.com"
                   className="hover:text-pink-600 transition"
                 >
                   siridecorations@gmail.com
@@ -74,8 +46,35 @@ const Contact = () => {
               </p>
             </div>
 
-            {/* Google Map */}
+            {/* Social Links */}
+            <div className="flex gap-6 mt-8 justify-center">
+              <a
+                href="https://wa.me/919848976339"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 text-white p-3 rounded-full hover:scale-110 transition"
+              >
+                <MessageCircle size={22} />
+              </a>
+              <a
+                href="https://www.instagram.com/siri__decorations?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                className="bg-pink-600 text-white p-3 rounded-full hover:scale-110 transition"
+              >
+                <Instagram size={22} />
+              </a>
+              <a
+                href="#"
+                className="bg-blue-600 text-white p-3 rounded-full hover:scale-110 transition"
+              >
+                <Facebook size={22} />
+              </a>
+            </div>
+
+            {/* Google Map + Directions Button */}
             <div className="mt-10">
+              <h4 className="text-xl font-semibold text-purple-700 mb-3">
+                Find Us on the Map 🗺️
+              </h4>
               <iframe
                 title="Siri Decorations Location"
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d237.75233039468307!2d80.61128118467383!3d17.553411380486008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1761651974907!5m2!1sen!2sin"
@@ -106,36 +105,22 @@ const Contact = () => {
               Send Us a Message 💌
             </h3>
 
-            <form ref={form} onSubmit={sendEmail} className="space-y-5">
+            <form className="space-y-5">
               <input
                 type="text"
-                name="user_name"
                 placeholder="Your Name"
-                required
                 className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-400 outline-none"
               />
               <input
                 type="email"
-                name="user_email"
                 placeholder="Your Email"
-                required
-                className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-400 outline-none"
-              />
-              <input
-                type="tel"
-                name="user_phone"
-                placeholder="Your Contact Number"
-                required
                 className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-400 outline-none"
               />
               <textarea
-                name="message"
                 rows={4}
                 placeholder="Your Message"
-                required
                 className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-pink-400 outline-none"
               ></textarea>
-
               <button
                 type="submit"
                 className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 rounded-lg font-semibold hover:scale-105 transition"
