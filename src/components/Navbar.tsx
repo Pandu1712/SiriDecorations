@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/gallery/Logosiri.jpg"; // 🖼️ Replace with your actual logo path
+import logo from "../assets/gallery/SiriPoster.jpg"; // 🖼️ Replace with your actual logo path
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

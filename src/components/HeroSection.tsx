@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImg from "../assets/gallery/Logosiri.jpg"; // 🖼️ Replace with your image
+import heroImg from "../assets/gallery/SiriPoster.jpg"; // 🖼️ Replace with your image
 
 const HeroSection = () => {
   return (
