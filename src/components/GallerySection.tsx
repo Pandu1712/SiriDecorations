@@ -12,10 +12,10 @@ import img7 from "../assets/gallery/7.jpg";
 import img8 from "../assets/gallery/8.jpg";
 import img9 from "../assets/gallery/9.jpg";
 import img10 from "../assets/gallery/10.jpg";
-import img11 from "../assets/gallery/11.jpg";
+import img11 from "../assets/gallery/birthday11.jpg";
 import img12 from "../assets/gallery/12.jpg";
 import img13 from "../assets/gallery/13.jpg";
-
+import img14 from "../assets/gallery/birthday12.jpg";
 import img15 from "../assets/gallery/15.jpg";
 import img16 from "../assets/gallery/16.jpg";
 import img17 from "../assets/gallery/17.jpg";
@@ -47,13 +47,15 @@ import img42 from "../assets/gallery/42.jpg";
 import img43 from "../assets/gallery/43.jpg";
 import img44 from "../assets/gallery/44.jpg";
 import img45 from "../assets/gallery/45.jpg";
+import img46 from "../assets/gallery/birthday13.jpg";
+
 
 
 
 const images = [
   img1,img2, img4,img3, img5, img6, img7, img8, img9, img10,
-  img11, img12, img13,img15,  img16, img17, img18, img19, img20,
-  img21, img22, img23, img24, img25, img26, img27, img28, img29,img30,img31,img32,img33,img34,img35,img36,img37,img38,img39,img40,img41,img42,img43,img44,img45
+  img11, img12, img13,img14,img15,  img16, img17, img18, img19, img20,
+  img21, img22, img23, img24, img25, img26, img27, img28, img29,img30,img31,img32,img33,img34,img35,img36,img37,img38,img39,img40,img41,img42,img43,img44,img45,img46
 ];
 
 const Gallery = () => {
