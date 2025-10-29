@@ -3,7 +3,9 @@ import heroImg from "../assets/gallery/Logosiri.jpg"; // 🖼️ Replace with yo
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-700 text-white py-16 md:py-32 px-4 sm:px-6 lg:px-12 overflow-hidden">
+    <section className="relative bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-700 text-white 
+                    pt-28 md:pt-32 pb-16 px-4 sm:px-6 lg:px-12 overflow-hidden">
+
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:gap-16">
         
         {/* Left Side - Image with Animation */}
