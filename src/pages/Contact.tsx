@@ -26,7 +26,7 @@ const Contact = () => {
                   href="tel:+919848976339"
                   className="hover:text-pink-600 transition"
                 >
-                  +91 63031 30025
+                  +91 9848976339
                 </a>
               </p>
 

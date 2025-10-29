@@ -1,6 +1,7 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Sparkles, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "../assets/gallery/Logosiri.jpg"; // 🖼️ Replace with your actual logo path
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +17,14 @@ const Navbar = () => {
   return (
     <nav className="bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg fixed top-0 left-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 text-2xl font-bold">
-          <Sparkles className="w-6 h-6" />
-          <span>Siri Decorations</span>
+        {/* ✅ Logo Section */}
+        <Link to="/" className="flex items-center gap-3 text-2xl font-bold">
+          <img
+            src={logo}
+            alt="Siri Decorations Logo"
+            className="w-12 h-12 rounded-full object-cover"
+          />
+          <span className="whitespace-nowrap">Siri Decorations</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -57,7 +62,7 @@ const Navbar = () => {
               <li key={item.name}>
                 <NavLink
                   to={item.path}
-                  onClick={() => setIsOpen(false)} // Close menu after click
+                  onClick={() => setIsOpen(false)} // Close after click
                   className={({ isActive }) =>
                     `hover:text-yellow-300 transition ${
                       isActive ? "text-yellow-300" : ""
